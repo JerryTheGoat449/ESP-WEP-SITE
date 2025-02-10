@@ -1,0 +1,192 @@
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: gray;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s;
+}
+.navbar li a class:active{
+    color: yellow;
+}
+.navbar a:hover {
+    color: yellow;
+}
+.navbar a.active {
+    
+    color: yellow
+}
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    .navbar {
+        display: none;
+        flex-direction: column;
+    }
+    .navbar.active {
+        display: flex;
+    }
+}
+/* Styles for the School News section */
+section {
+    max-width: 800px; /* Limit the width of the section */
+    margin: 20px auto; /* Center the section */
+    padding: 20px; /* Add padding */
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h1 {
+    text-align: center; /* Center the main heading */
+    color: #007BFF; /* Blue color for main headings */
+    margin-bottom: 20px; /* Space below the main heading */
+}
+
+h2 {
+    color: #333; /* Dark color for subheadings */
+    margin: 15px 0; /* Space above and below subheadings */
+}
+
+h3, h4, h5 {
+    color: #555; /* Slightly lighter color for smaller headings */
+    margin: 10px 0; /* Space above and below smaller headings */
+}
+
+h2, h3, h4, h5 {
+    line-height: 1.5; /* Improve readability with line height */
+}
+
+img {
+    max-width: 100%; /* Responsive images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
+    margin: 10px 0; /* Space above and below images */
+}
+
+hr {
+    border: 0; /* Remove default border */
+    height: 1px; /* Set height */
+    background: #007BFF; /* Blue color for the line */
+    margin: 20px 0; /* Space above and below the line */
+}
+
+/* Additional spacing for sections */
+.section-content-justin,
+.section-content-newyear,
+.section-content-feastday,
+.section-content-presscon {
+    padding: 20px; /* Add padding to each content section */
+    background-color: #f9f9f9; /* Light gray background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 20px; /* Space between sections */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.section-content-justin h1,
+.section-content-newyear h1,
+.section-content-feastday h2,
+.section-content-presscon h1 {
+    color: #007BFF; /* Blue color for section titles */
+}
+
+.section-content-justin h2,
+.section-content-newyear h2,
+.section-content-feastday h2,
+.section-content-presscon h2 {
+    font-weight: normal; /* Normal weight for subheadings */
+}
+footer {
+    background: gray;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-col h4 {
+    margin-bottom: 10px;
+}
+
+.footer-col a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-col a:hover {
+    color: yellow;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+    transition: background 0.3s;
+}
+
+.back-to-top:hover {
+    background: yellow;
+    color: #333;
+}

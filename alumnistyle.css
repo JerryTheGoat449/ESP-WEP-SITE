@@ -1,0 +1,167 @@
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: gray;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s;
+}
+.navbar li a class:active{
+    color: yellow;
+}
+.navbar a:hover {
+    color: yellow;
+}
+.navbar a.active {
+    
+    color: yellow
+}
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    .navbar {
+        display: none;
+        flex-direction: column;
+    }
+    .navbar.active {
+        display: flex;
+    }
+}
+/* Styles for the downloadable forms section */
+section {
+    max-width: 800px; /* Limit the width of the section */
+    margin: 20px auto; /* Center the section */
+    padding: 20px; /* Add padding */
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h1 {
+    text-align: center; /* Center the headings */
+    color: black; /* Blue color for headings */
+    margin-bottom: 20px; /* Space below the headings */
+}
+
+.downloadable-forms {
+    padding: 0; /* Remove default padding */
+    margin: 13px 0px;
+}
+
+.downloadable-forms a {
+    display: block; /* Make links block elements for better spacing */
+    padding: 10px; /* Add padding for clickable area */
+    margin: 7px 0; /* Space between links */
+    background-color: gray; /* Blue background for links */
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background 0.3s; /* Smooth background transition */
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.downloadable-forms a:hover {
+    color: yellow; /* Change text color to dark on hover */
+}
+
+hr {
+    border: 0; /* Remove default border */
+    height: 1px; /* Set height */
+    background: black; /* Blue color for the line */
+    margin: 20px 0; /* Space above and below the line */
+}
+footer {
+    background: gray;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-col h4 {
+    margin-bottom: 10px;
+}
+
+.footer-col a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-col a:hover {
+    color: yellow;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+    transition: background 0.3s;
+}
+
+.back-to-top:hover {
+    background: yellow;
+    color: #333;
+}
